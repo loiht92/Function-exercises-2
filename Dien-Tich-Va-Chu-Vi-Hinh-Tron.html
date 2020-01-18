@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function diameterOfCircle(number) {
+        let PI = Math.PI;
+        diameterOfCircle = PI * number * 2;
+        return diameterOfCircle;
+    }
+
+
+    function circleArea(number) {
+        let PI = Math.PI;
+        circleArea = PI * number * number;
+        return circleArea;
+    }
+
+    function rectangularArea(number1, number2) {
+        rectangularArea = number1 * number2;
+        return rectangularArea;
+    }
+
+    let x = parseFloat(prompt("Enter a radius"));
+    document.write("Chu vi hinh tron la:" + diameterOfCircle(x));
+    document.write("<br>");
+    document.write("Dien tich hinh tron la: " + circleArea(x));
+    document.write("<br>");
+
+    let b = parseFloat(prompt("Enter a length"));
+    let c = parseFloat(prompt("Enter a width"));
+    document.write("Dien tich hinh chu nhat la:" + rectangularArea(b, c));
+</script>
+</body>
+</html>

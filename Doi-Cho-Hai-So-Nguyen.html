@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function SwapIntegers(number1, number2) {
+        let temp="";
+        temp=number1;
+        number1=number2;
+        number2=temp;
+        return [number1, number2];
+    }
+    let a=parseInt(prompt("Enter a number1"));
+    let b=parseInt(prompt("Enter a number2"));
+    document.write("Sau khi doi vi tri:" +SwapIntegers(a,b));
+</script>
+</body>
+</html>
